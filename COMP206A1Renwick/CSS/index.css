@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', 'serif';
+}
+
+.AddEmployeeForm{
+    background-color: lightgreen;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-bottom: 2em; 
+    width: 21em;
+}
+
+.AddShiftForm{
+    background-color: lightgreen;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+    width: 21em;
+}
+
+legend{
+    background-color: limegreen;
+    padding-top: .2em;
+    padding-bottom: .17em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input{
+    float: right;
+    border-style: none;
+}
+
+.buttons{
+    display:block;
+    margin:0 auto;
+    font-size: 16px;
+}
+
+select{
+    font-size: 15.5px;
+    width: 7em;
+}
+
+p{
+    padding-left: 0.8em;
+    padding-right: 1em;
+}
+
+.radio-inline{
+    float: right;
+    width: 60%;
+    margin-right: 1em;
+}
+
+.firstfloat{
+    float: left;
+    width: 22em;
+}
+
+.secondfloat{
+    float: left;
+    width: 22em;
+}
+
+#radiolabel{
+    margin-left: 0.8em;
+}
