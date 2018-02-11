@@ -2,6 +2,7 @@ function validateAddEmployeeForm()
 {
     var mismatches = 0;
     
+	/*Employee Phone Number*/
     var reempPhone = /^\d\d\d[-]\d\d\d[-]\d\d\d\d$/;
     var empPhone = document.getElementById("empPhone");
     if (!empPhone.value.match(reempPhone))
@@ -9,6 +10,7 @@ function validateAddEmployeeForm()
         empPhone.style.backgroundColor= "red";
         mismatches++;
     }
+
     
     var reempFname = /^[A-Z][a-z]+$/;
     var empFname = document.getElementById("empFname");
