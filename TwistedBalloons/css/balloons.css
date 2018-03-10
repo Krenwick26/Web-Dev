@@ -1,0 +1,73 @@
+body
+{
+	background-color: #99ffff;
+	font-family: "Comic Sans MS";
+}
+
+
+h1
+{
+	color: #990099;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	margin-bottom: 0em;
+	padding-bottom: 0em;
+}
+
+h2
+{
+	padding-top: 0em;
+	margin-top: 0em;
+	color: #990099;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	font-style: italic;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.top
+{
+}
+
+.firstfloat
+{
+	float: left;
+	width: 20%;
+	min-width: 12.5em;
+}
+
+.secondfloat
+{
+	float: left;
+	width: 68%;
+}
+
+.bottom
+{
+	clear: both;
+	text-align: center;
+}
+
+.selected
+{
+	margin-left: 2em;
+}
+
+fieldset
+{
+	width: 40%;
+	background-color: pink;
+}
+
+#hours
+{
+	width: 10%
+}
+
+legend
+{
+	font-weight: bold;
+}
