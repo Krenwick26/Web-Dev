@@ -1,0 +1,45 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page pageEncoding="UTF-8" %>
+
+<h3 class="page-header">Hour Logs for ${currentUser.getUserName()}</h3><br>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>Date</th>
+            <th>Hours</th>
+            <th>Summary of Activities</th>
+            <th>Approval Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <c:forEach items="${studentMgr.getStudent(currentUser.getUserName()).getHourLogs()}" var="l">
+            <tr>
+                <td>${l.getDate()}</td>
+                <td>${l.getNoHours()}</td>
+                <td>${l.getSummary()}</td>
+                <td>
+                    <c:choose>
+                        <c:when test="${l.getApprovedBy() != null}">
+                            <span class="text-success">
+                               Approved by ${l.getApprovedBy().getUserName()} 
+                            </span>
+                        </c:when>
+                        <c:otherwise>
+                            Awaiting approval
+                        </c:otherwise>
+                    </c:choose>
+                </td>
+            </tr>
+        </c:forEach>
+    </tbody>
+    <tbody>
+        <tr>
+            <th></th>
+            <th>Total Hours: ${studentMgr.getStudent(currentUser.getUserName()).calculateTotalHours()}</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tbody>
+</table>
+<br>

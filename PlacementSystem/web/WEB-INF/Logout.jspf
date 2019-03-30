@@ -1,0 +1,9 @@
+<%@ page pageEncoding="UTF-8" %>
+<div>
+    <form action="ControllerServlet">
+        <div class="text-right">
+            Signed in as ${currentUser.getUserName()}
+            <button name="buttonAction" value="logout" class="btn">Logout</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<label>Registered Students:</label>
+<ul>
+    <c:forEach items="${loginMgr.getUserList()}" var="u">
+        <c:if test = "${u.getUserType().equals('Student')}">
+            <li>${u.getUserName()}</li>
+        </c:if>
+    </c:forEach>
+</ul>

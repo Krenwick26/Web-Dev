@@ -1,0 +1,6 @@
+@startuml
+Student-->(Log Hours)
+Student-->(Review Hours)
+Coordinator-->(Review Hours)
+(Log Hours).>(Review Hours) : extends
+@enduml
